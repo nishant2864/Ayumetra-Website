@@ -45,6 +45,12 @@ export function Header() {
           >
             Technology
           </Link>
+          <Link
+            href="/privacy-policy"
+            className={`text-sm transition-colors ${isScrolled ? "text-muted-foreground hover:text-foreground" : "text-white/70 hover:text-white"}`}
+          >
+            Privacy Policy
+          </Link>
           {/* <Link
             href="#team"
             className={`text-sm transition-colors ${isScrolled ? "text-muted-foreground hover:text-foreground" : "text-white/70 hover:text-white"}`}
@@ -117,6 +123,13 @@ export function Header() {
               onClick={() => setIsMenuOpen(false)}
             >
               Accessories
+            </Link>
+            <Link
+              href="/privacy-policy"
+              className="text-lg text-foreground"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Privacy Policy
             </Link>
             <Link
               href="#reserve"
