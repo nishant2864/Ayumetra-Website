@@ -8,25 +8,25 @@ const word = "AyuMetra";
 const sideImages = [
   {
     src: "https://images.unsplash.com/photo-1517824806704-9040b037703b?q=80&w=1000",
-    alt: "Mountain hiking adventure",
+    alt: "",
     position: "left",
     span: 1,
   },
   {
     src: "https://images.unsplash.com/photo-1510312305653-8ed496efae75?q=80&w=1000",
-    alt: "Camping under stars",
+    alt: " ",
     position: "left",
     span: 1,
   },
   {
     src: "https://images.unsplash.com/photo-1533873984035-25970ab07461?q=80&w=1000",
-    alt: "Forest exploration",
+    alt: " ",
     position: "right",
     span: 1,
   },
   {
     src: "https://images.unsplash.com/photo-1527004013197-933c4bb611b3?q=80&w=1000",
-    alt: "Lake camping view",
+    alt: " ",
     position: "right",
     span: 1,
   },
@@ -127,7 +127,7 @@ export function HeroSection() {
             >
               <Image
                 src="/hero.jpg"
-                alt="Mountain landscape with camping tent at sunset"
+                alt=" "
                 fill
                 className="object-cover"
                 priority
