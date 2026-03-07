@@ -12,19 +12,19 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: '/AyumetraLogo.png',
+        url: '/AyuMetraLogo.png',
         media: '(prefers-color-scheme: light)',
       },
       {
-        url: '/AyumetraLogo-.png',
+        url: '/AyuMetraLogo-White.png',
         media: '(prefers-color-scheme: dark)',
       },
       {
-        url: '/AyumetraLogo.png',
+        url: '/AyuMetraLogo.png',
         type: 'image/svg+xml',
       },
     ],
-    apple: '/AyumetraLogo.png',
+    apple: '/AyuMetraLogo.png',
   },
 }
 

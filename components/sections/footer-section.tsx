@@ -32,7 +32,7 @@ export function FooterSection() {
           {/* Brand */}
           <div className="col-span-2 md:col-span-1 lg:col-span-2">
             <Link href="/" className="text-lg font-medium text-foreground">
-              <Image src="/AyumetraLogo.png" alt="Logo" width={200} height={200} priority={true} />
+              <Image src="/AyuMetraLogo.png" alt="Logo" width={200} height={200} priority={true} />
             </Link>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted-foreground">
               A smart wellness companion designed for your mind and emotions. Personalized insights, guided support, and intelligent tools to help you find balance every day.

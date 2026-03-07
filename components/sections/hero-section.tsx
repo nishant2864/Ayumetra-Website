@@ -126,7 +126,7 @@ export function HeroSection() {
               }}
             >
               <Image
-                src="hero.jpg"
+                src="/hero.jpg"
                 alt="Mountain landscape with camping tent at sunset"
                 fill
                 className="object-cover"
