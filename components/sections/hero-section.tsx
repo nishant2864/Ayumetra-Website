@@ -126,7 +126,7 @@ export function HeroSection() {
               }}
             >
               <Image
-                src="/hero.jpg"
+                src="/hero-v2.jpg"
                 alt=" "
                 fill
                 className="object-cover"

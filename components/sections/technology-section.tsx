@@ -203,7 +203,7 @@ export function TechnologySection() {
               }}
             >
               <Image
-                src="/app-home.png"
+                src="/app-home-v2.png"
                 alt="Aerial view of camping expedition in wilderness"
                 fill
                 className="object-contain p-14"

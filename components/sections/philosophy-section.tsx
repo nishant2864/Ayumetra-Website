@@ -96,7 +96,7 @@ export function PhilosophySection() {
                 }}
               >
                 <Image
-                  src="/emolift.png"
+                  src="/emolift-v2.png"
                   alt="V1 Expedition Backpack in alpine setting"
                   fill
                   className="object-contain"
@@ -114,7 +114,7 @@ export function PhilosophySection() {
                 }}
               >
                 <Image
-                  src="/elder-connect.png"
+                  src="/elder-connect-v2.png"
                   alt="V1 Thermal mug in forest setting"
                   fill
                   className="object-contain"

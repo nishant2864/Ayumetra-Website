@@ -12,13 +12,13 @@ export function GallerySection() {
   const lastScrollRef = useRef(0);
 
   const images = [
-    { src: "/launch-screen.png", alt: "Thermal bottle on bike" },
-    { src: "/app-home.png", alt: "Thermal bottle by lake" },
-    { src: "/emolift-intro.png", alt: "Thermal bottle in water" },
-    { src: "/emolift.png", alt: "Thermal bottle by stream" },
-    { src: "/manual-mood.png", alt: "Thermal bottle by fire" },
-    { src: "/recommended-activity.png", alt: "Thermal bottle in snow" },
-    { src: "/elder-connect.png", alt: "Thermal bottle on mountain" },
+    { src: "/launch-screen-v2.png", alt: "Thermal bottle on bike" },
+    { src: "/app-home-v2.png", alt: "Thermal bottle by lake" },
+    { src: "/emolift-intro-v2.png", alt: "Thermal bottle in water" },
+    { src: "/emolift-v2.png", alt: "Thermal bottle by stream" },
+    { src: "/manual-mood-v2.png", alt: "Thermal bottle by fire" },
+    { src: "/recommended-activity-v2.png", alt: "Thermal bottle in snow" },
+    { src: "/elder-connect-v2.png", alt: "Thermal bottle on mountain" },
     // { src: "/images/bottle-canyon.png", alt: "Thermal bottle at canyon" },
   ];
 
