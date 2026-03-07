@@ -107,19 +107,13 @@ export function FooterSection() {
               href="#"
               className="text-xs text-muted-foreground transition-colors hover:text-foreground"
             >
-              Instagram
+              Terms & Conditions
             </Link>
             <Link
-              href="#"
+              href="/privacy-policy"
               className="text-xs text-muted-foreground transition-colors hover:text-foreground"
             >
-              Twitter
-            </Link>
-            <Link
-              href="#"
-              className="text-xs text-muted-foreground transition-colors hover:text-foreground"
-            >
-              YouTube
+              Privacy Policy
             </Link>
           </div>
         </div>

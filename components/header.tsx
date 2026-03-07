@@ -45,12 +45,6 @@ export function Header() {
           >
             Technology
           </Link>
-          <Link
-            href="/privacy-policy"
-            className={`text-sm transition-colors ${isScrolled ? "text-muted-foreground hover:text-foreground" : "text-white/70 hover:text-white"}`}
-          >
-            Privacy Policy
-          </Link>
           {/* <Link
             href="#team"
             className={`text-sm transition-colors ${isScrolled ? "text-muted-foreground hover:text-foreground" : "text-white/70 hover:text-white"}`}
@@ -101,7 +95,7 @@ export function Header() {
               className="text-lg text-foreground"
               onClick={() => setIsMenuOpen(false)}
             >
-              Products
+              Features
             </Link>
             <Link
               href="#technology"
@@ -110,7 +104,7 @@ export function Header() {
             >
               Technology
             </Link>
-            <Link
+            {/* <Link
               href="#gallery"
               className="text-lg text-foreground"
               onClick={() => setIsMenuOpen(false)}
@@ -125,19 +119,12 @@ export function Header() {
               Accessories
             </Link>
             <Link
-              href="/privacy-policy"
-              className="text-lg text-foreground"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Privacy Policy
-            </Link>
-            <Link
               href="#reserve"
               className="mt-4 bg-foreground px-5 py-3 text-center text-sm font-medium text-background rounded-full"
               onClick={() => setIsMenuOpen(false)}
             >
               Reserve
-            </Link>
+            </Link> */}
           </nav>
         </div>
       )}
