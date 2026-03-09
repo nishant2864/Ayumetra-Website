@@ -4,22 +4,22 @@ import Link from "next/link";
 import Image from "next/image";
 const footerLinks = {
   explore: [
-    { label: "Features", href: "#products" },
-    { label: "Technology", href: "#technology" },
-    { label: "Gallery", href: "#gallery" },
-    { label: "Accessories", href: "#accessories" },
+    { label: "Features", href: "/#products" },
+    { label: "Technology", href: "/#technology" },
+    { label: "Gallery", href: "/#gallery" },
+    { label: "Accessories", href: "/#accessories" },
   ],
   about: [
-    { label: "Our Story", href: "#" },
-    { label: "Team", href: "#" },
-    { label: "Careers", href: "#" },
-    { label: "Contact", href: "#" },
+    { label: "Our Story", href: "/#" },
+    { label: "Team", href: "/#" },
+    { label: "Careers", href: "/#" },
+    { label: "Contact", href: "/#" },
   ],
   service: [
-    { label: "FAQ", href: "#" },
-    { label: "Shipping", href: "#" },
-    { label: "Returns", href: "#" },
-    { label: "Warranty", href: "#" },
+    { label: "FAQ", href: "/#" },
+    { label: "Shipping", href: "/#" },
+    { label: "Returns", href: "/#" },
+    { label: "Warranty", href: "/#" },
   ],
 };
 
@@ -104,7 +104,7 @@ export function FooterSection() {
           {/* Social Links */}
           <div className="flex items-center gap-4">
             <Link
-              href="#"
+              href="/terms-and-conditions"
               className="text-xs text-muted-foreground transition-colors hover:text-foreground"
             >
               Terms & Conditions

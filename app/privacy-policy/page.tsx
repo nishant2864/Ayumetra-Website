@@ -20,7 +20,7 @@ export default function PrivacyPolicy() {
 
             <Header />
 
-            <div className="relative z-10 pt-32 md:pt-40 pb-24 px-6 md:px-12 max-w-4xl mx-auto">
+            <div className="relative z-10 pt-32 md:pt-40 pb-24 px-6 md:px-12 max-w-7xl mx-auto">
                 <div className="bg-card p-8 md:p-12 rounded-3xl border border-border/50 shadow-sm">
                     <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-6 text-foreground">
                         Privacy Policy
