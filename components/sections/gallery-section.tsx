@@ -12,14 +12,12 @@ export function GallerySection() {
   const lastScrollRef = useRef(0);
 
   const images = [
-    { src: "/launch-screen-v2.png", alt: "Thermal bottle on bike" },
-    { src: "/app-home-v2.png", alt: "Thermal bottle by lake" },
-    { src: "/emolift-intro-v2.png", alt: "Thermal bottle in water" },
-    { src: "/emolift-v2.png", alt: "Thermal bottle by stream" },
-    { src: "/manual-mood-v2.png", alt: "Thermal bottle by fire" },
-    { src: "/recommended-activity-v2.png", alt: "Thermal bottle in snow" },
-    { src: "/elder-connect-v2.png", alt: "Thermal bottle on mountain" },
-    // { src: "/images/bottle-canyon.png", alt: "Thermal bottle at canyon" },
+    { src: "/app-home-v2.png", alt: "Home Screen" },
+    { src: "/emolift-v2.png", alt: "Emolift" },
+    { src: "/serenity.png", alt: "Serenity" },
+    { src: "/activities.png", alt: "Activities" },
+    { src: "/elder-connect-v2.png", alt: "Elder Connect" },
+    { src: "/chats.png", alt: "Chats" },
   ];
 
   // Calculate section height based on content width

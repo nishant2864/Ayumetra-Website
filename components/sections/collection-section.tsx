@@ -1,127 +1,98 @@
 "use client";
 
-import { FadeImage } from "@/components/fade-image";
+import Image from "next/image";
 
-const accessories = [
+const experiences = [
   {
     id: 1,
-    name: "Wireless Charging Stand",
-    description: "Induction charging dock for effortless power",
-    price: "$89",
-    image: "/images/accessory-charger.png",
+    title: "Simple Mood Logging",
+    description: "Easily track your daily emotions with an intuitive interface designed for clarity.",
+    image: "/2.jpg",
   },
   {
     id: 2,
-    name: "Protective Silicone Sleeve",
-    description: "Textured grip sleeve for enhanced durability",
-    price: "$45",
-    image: "/images/accessory-sleeve.png",
+    title: "Mindful Serenity",
+    description: "Access guided meditations, calming music, and mindful breathing exercises instantly.",
+    image: "/3.jpg",
   },
   {
     id: 3,
-    name: "Carbon Fiber Bike Mount",
-    description: "Ultra-light mounting system for cycling",
-    price: "$129",
-    image: "/images/accessory-bike-mount.png",
+    title: "Community Events",
+    description: "Discover verified local activities and meetups geared towards your interests.",
+    image: "/8.jpg",
   },
   {
     id: 4,
-    name: "Premium Carry Strap",
-    description: "Adjustable strap with quick-release clips",
-    price: "$39",
-    image: "/images/accessory-strap.png",
-  },
-  {
-    id: 5,
-    name: "Carabiner Clip System",
-    description: "Secure attachment for hands-free carrying",
-    price: "$29",
-    image: "/images/accessory-carabiner.png",
-  },
-  {
-    id: 6,
-    name: "Bluetooth Speaker Base",
-    description: "High-fidelity audio dock with grip stabilizers",
-    price: "$149",
-    image: "/images/accessory-speaker-base.png",
+    title: "Secure Communication",
+    description: "Stay in touch with family, caregivers, and friends securely and privately.",
+    image: "/6.jpg",
   },
 ];
 
 export function CollectionSection() {
   return (
-    <section id="accessories" className="bg-background">
+    <section id="experience" className="bg-background">
       {/* Section Title */}
       <div className="px-6 py-20 md:px-12 lg:px-20 md:py-10">
         <h2 className="text-3xl font-medium tracking-tight text-foreground md:text-4xl">
-          Essential Accessories
+          The AyuMetra Experience
         </h2>
+        <p className="mt-4 max-w-2xl text-muted-foreground text-lg">
+          Thoughtfully crafted to be simple, accessible, and deeply helpful for senior users.
+        </p>
       </div>
 
-      {/* Accessories Grid/Carousel */}
+      {/* Experience Grid/Carousel */}
       <div className="pb-24">
         {/* Mobile: Horizontal Carousel */}
         <div className="flex gap-6 overflow-x-auto px-6 pb-4 md:hidden snap-x snap-mandatory scrollbar-hide">
-          {accessories.map((accessory) => (
-            <div key={accessory.id} className="group flex-shrink-0 w-[75vw] snap-center">
+          {experiences.map((exp) => (
+            <div key={exp.id} className="group flex-shrink-0 w-[75vw] snap-center">
               {/* Image */}
-              <div className="relative aspect-[2/3] overflow-hidden rounded-2xl bg-secondary">
-                <FadeImage
-                  src={accessory.image || "/placeholder.svg"}
-                  alt={accessory.name}
+              <div className="relative aspect-[9/16] overflow-hidden rounded-3xl bg-secondary/50">
+                <Image
+                  src={exp.image || "/placeholder.svg"}
+                  alt={exp.title}
                   fill
-                  className="object-cover group-hover:scale-105"
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
 
               {/* Content */}
-              <div className="py-6">
-                <div className="flex items-start justify-between gap-4">
-                  <div className="flex-1">
-                    <h3 className="text-lg font-medium leading-snug text-foreground">
-                      {accessory.name}
-                    </h3>
-                    <p className="mt-2 text-sm text-muted-foreground">
-                      {accessory.description}
-                    </p>
-                  </div>
-                  <span className="text-lg font-medium text-foreground">
-                    {accessory.price}
-                  </span>
-                </div>
+              <div className="py-6 flex flex-col gap-2">
+                <h3 className="text-xl font-semibold leading-snug text-foreground">
+                  {exp.title}
+                </h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  {exp.description}
+                </p>
               </div>
             </div>
           ))}
         </div>
 
         {/* Desktop: Grid */}
-        <div className="hidden md:grid md:grid-cols-3 gap-8 md:px-12 lg:px-20">
-          {accessories.map((accessory) => (
-            <div key={accessory.id} className="group">
+        <div className="hidden md:grid md:grid-cols-4 gap-8 md:px-12 lg:px-20">
+          {experiences.map((exp) => (
+            <div key={exp.id} className="group flex flex-col h-full">
               {/* Image */}
-              <div className="relative aspect-[2/3] overflow-hidden rounded-2xl bg-secondary">
-                <FadeImage
-                  src={accessory.image || "/placeholder.svg"}
-                  alt={accessory.name}
+              <div className="relative aspect-[9/16] w-full overflow-hidden rounded-3xl bg-secondary/50">
+                <Image
+                  src={exp.image || "/placeholder.svg"}
+                  alt={exp.title}
                   fill
-                  className="object-cover group-hover:scale-105"
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
 
               {/* Content */}
-              <div className="py-6">
-                <div className="flex items-start justify-between gap-4">
-                  <div className="flex-1">
-                    <h3 className="text-lg font-medium leading-snug text-foreground">
-                      {accessory.name}
-                    </h3>
-                    <p className="mt-2 text-sm text-muted-foreground">
-                      {accessory.description}
-                    </p>
-                  </div>
-                  <span className="font-medium text-foreground text-2xl">
-                    {accessory.price}
-                  </span>
-                </div>
+              <div className="py-6 flex flex-col gap-2 flex-grow">
+                <h3 className="text-xl font-semibold leading-snug text-foreground">
+                  {exp.title}
+                </h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  {exp.description}
+                </p>
               </div>
             </div>
           ))}

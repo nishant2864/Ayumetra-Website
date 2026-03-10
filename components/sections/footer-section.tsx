@@ -4,16 +4,14 @@ import Link from "next/link";
 import Image from "next/image";
 const footerLinks = {
   explore: [
-    { label: "Features", href: "/#products" },
-    { label: "Technology", href: "/#technology" },
-    { label: "Gallery", href: "/#gallery" },
-    { label: "Accessories", href: "/#accessories" },
+    { label: "Spotlight", href: "/#products" },
+    { label: "Features", href: "/#features" },
+    { label: "Experience", href: "/#experience" },
   ],
   about: [
-    { label: "Our Story", href: "/#" },
-    { label: "Team", href: "/#" },
-    { label: "Careers", href: "/#" },
-    { label: "Contact", href: "/#" },
+    { label: "Our Mission", href: "/#about" },
+    { label: "Our Team", href: "/#" },
+    { label: "Contact", href: "/contact" },
   ],
   service: [
     { label: "FAQ", href: "/#" },

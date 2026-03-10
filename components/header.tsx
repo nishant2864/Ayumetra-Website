@@ -28,7 +28,7 @@ export function Header() {
       <div className="flex items-center justify-between transition-all duration-300 px-2 pl-5 py-2">
         {/* Logo */}
         <Link href="/" className={`text-lg font-medium tracking-tight transition-colors duration-300 ${isScrolled ? "text-foreground" : "text-white"}`}>
-          <Image src="/AyuMetraLogo.png" alt="Logo" width={100} height={100} priority={true} />
+          <Image src={isScrolled ? "/AyuMetraLogo.png" : "/ayumetralogo-white.png"} alt="Logo" width={100} height={100} priority={true} />
         </Link>
 
         {/* Desktop Navigation */}
@@ -37,38 +37,32 @@ export function Header() {
             href="/#products"
             className={`text-sm transition-colors ${isScrolled ? "text-muted-foreground hover:text-foreground" : "text-white/70 hover:text-white"}`}
           >
+            Spotlight
+          </Link>
+          <Link
+            href="/#features"
+            className={`text-sm transition-colors ${isScrolled ? "text-muted-foreground hover:text-foreground" : "text-white/70 hover:text-white"}`}
+          >
             Features
           </Link>
           <Link
-            href="/#technology"
+            href="#experience"
             className={`text-sm transition-colors ${isScrolled ? "text-muted-foreground hover:text-foreground" : "text-white/70 hover:text-white"}`}
           >
-            Technology
-          </Link>
-          {/* <Link
-            href="#team"
-            className={`text-sm transition-colors ${isScrolled ? "text-muted-foreground hover:text-foreground" : "text-white/70 hover:text-white"}`}
-          >
-            Team
-          </Link> */}
-          {/* <Link
-            href="#gallery"
-            className={`text-sm transition-colors ${isScrolled ? "text-muted-foreground hover:text-foreground" : "text-white/70 hover:text-white"}`}
-          >
-            Gallery
+            Experience
           </Link>
           <Link
-            href="#accessories"
+            href="/contact"
             className={`text-sm transition-colors ${isScrolled ? "text-muted-foreground hover:text-foreground" : "text-white/70 hover:text-white"}`}
           >
-            Accessories
-          </Link> */}
+            Contact
+          </Link>
         </nav>
 
         {/* CTA */}
         <div className="hidden items-center gap-6 md:flex">
           <Link
-            href="/#reserve"
+            href="#" // https://apps.apple.com/app/id6747028002 
             className={`px-4 py-2 text-sm font-medium transition-all rounded-full ${isScrolled ? "bg-foreground text-background hover:opacity-80" : "bg-white text-foreground hover:bg-white/90"}`}
           >
             Get App
@@ -95,36 +89,36 @@ export function Header() {
               className="text-lg text-foreground"
               onClick={() => setIsMenuOpen(false)}
             >
+              Spotlight
+            </Link>
+            <Link
+              href="/#features"
+              className="text-lg text-foreground"
+              onClick={() => setIsMenuOpen(false)}
+            >
               Features
             </Link>
             <Link
-              href="/#technology"
+              href="/#experience"
               className="text-lg text-foreground"
               onClick={() => setIsMenuOpen(false)}
             >
-              Technology
-            </Link>
-            {/* <Link
-              href="#gallery"
-              className="text-lg text-foreground"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Gallery
+              Experience
             </Link>
             <Link
-              href="#accessories"
+              href="/contact"
               className="text-lg text-foreground"
               onClick={() => setIsMenuOpen(false)}
             >
-              Accessories
+              Contact
             </Link>
             <Link
               href="#reserve"
               className="mt-4 bg-foreground px-5 py-3 text-center text-sm font-medium text-background rounded-full"
               onClick={() => setIsMenuOpen(false)}
             >
-              Reserve
-            </Link> */}
+              Get App
+            </Link>
           </nav>
         </div>
       )}

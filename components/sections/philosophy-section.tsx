@@ -63,8 +63,8 @@ export function PhilosophySection() {
           <p className="text-xs uppercase tracking-widest text-muted-foreground">
             Ayumetra
           </p>
-          <p className="mt-8 leading-relaxed text-muted-foreground text-3xl text-center">
-            Ayumetra helps you nurture emotional strength and mental peace through guided support, mindful tools, and personalized wellness experiences.
+          <p className="mt-8 leading-relaxed text-muted-foreground text-2xl md:text-3xl text-center max-w-4xl mx-auto">
+            AyuMetra helps you nurture emotional strength and mental peace through guided support, mindful tools, and personalized wellness experiences. Empowering seniors to rediscover joy and connection in everyday life.
           </p>
         </div>
       </div>
@@ -97,7 +97,7 @@ export function PhilosophySection() {
               >
                 <Image
                   src="/emolift-v2.png"
-                  alt="V1 Expedition Backpack in alpine setting"
+                  alt="EmoLift"
                   fill
                   className="object-contain"
                 />
@@ -115,7 +115,7 @@ export function PhilosophySection() {
               >
                 <Image
                   src="/elder-connect-v2.png"
-                  alt="V1 Thermal mug in forest setting"
+                  alt="ElderConnect"
                   fill
                   className="object-contain"
                 />

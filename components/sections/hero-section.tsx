@@ -7,25 +7,25 @@ const word = "AyuMetra";
 
 const sideImages = [
   {
-    src: "https://images.unsplash.com/photo-1517824806704-9040b037703b?q=80&w=1000",
+    src: "/Mindfulness Meditation.jpg",
     alt: "",
     position: "left",
     span: 1,
   },
   {
-    src: "https://images.unsplash.com/photo-1510312305653-8ed496efae75?q=80&w=1000",
+    src: "/Transcendental Meditation.jpg",
     alt: " ",
     position: "left",
     span: 1,
   },
   {
-    src: "https://images.unsplash.com/photo-1533873984035-25970ab07461?q=80&w=1000",
+    src: "/SSImage2.jpeg",
     alt: " ",
     position: "right",
     span: 1,
   },
   {
-    src: "https://images.unsplash.com/photo-1527004013197-933c4bb611b3?q=80&w=1000",
+    src: "/LovingKindeness Meditation.jpg",
     alt: " ",
     position: "right",
     span: 1,
@@ -195,9 +195,7 @@ export function HeroSection() {
       {/* Tagline Section */}
       <div className="px-6 pt-32 pb-28 md:pt-48 md:px-12 md:pb-36 lg:px-20 lg:pt-56 lg:pb-44">
         <p className="mx-auto max-w-2xl text-center text-2xl leading-relaxed text-muted-foreground md:text-3xl lg:text-[2.5rem] lg:leading-snug">
-          Designed for comfort.
-          <br />
-          Trusted for daily care.
+          Because growing older should never mean growing alone.
         </p>
       </div>
     </section>

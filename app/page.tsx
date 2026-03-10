@@ -18,9 +18,9 @@ export default function Home() {
       <FeaturedProductsSection />
       {/* <TechnologySection /> */}
       <GallerySection />
-      {/* <CollectionSection /> */}
+      <CollectionSection />
       {/* <EditorialSection /> */}
-      {/* <TestimonialsSection /> */}
+      <TestimonialsSection />
       <FooterSection />
     </main>
   );

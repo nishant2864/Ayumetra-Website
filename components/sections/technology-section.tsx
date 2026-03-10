@@ -91,7 +91,7 @@ export function TechnologySection() {
   const [scrollProgress, setScrollProgress] = useState(0);
   const [textProgress, setTextProgress] = useState(0);
 
-  const descriptionText = "Experience emotional wellness reimagined through thoughtful technology. Ayumetra combines personalized insights, mindful practices, and intelligent support tools to help you manage stress, understand your emotions, and build lasting balance. Wherever life takes you, your wellness journey adapts to your needs.";
+  const descriptionText = "AyuMetra combines modern technology with thoughtful design to make mental wellness tools accessible for seniors. With features powered by CoreML, MapKit, and secure communication technologies, the app provides meaningful support while remaining simple and intuitive to use.";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -216,7 +216,7 @@ export function TechnologySection() {
                 className="absolute inset-0 flex flex-col items-center justify-center px-6 text-center"
               >
                 <h2 className="max-w-3xl font-medium leading-tight tracking-tight text-white md:text-5xl lg:text-7xl text-5xl">
-                  {["A Team", "Committed to", "Mental Well-being."].map((word, index) => {
+                  {["Meaningful Support.", "Powered by", "Modern Tech."].map((word, index) => {
                     // Each word fades out sequentially based on scrollProgress
                     const wordFadeStart = index * 0.07; // Technology: 0, Meets: 0.07, Wilderness: 0.14
                     const wordFadeEnd = wordFadeStart + 0.07;
